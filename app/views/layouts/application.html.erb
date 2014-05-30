@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TestApp</title>
+  <title>Radius Health | <%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<header class="navbar navbar-fixed-top navbar-inverse">
+	  <div class="navbar-inner">
+	  	<!-- <div class="radlogo">
+	  		<%= link_to image_tag("Logo1.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+	  	</div> -->
+	    <div class="container">
+	      <%= link_to 'Sample', '#', id: "logo" %>
+	      <nav>
+	        <ul class="nav pull-right">
+	          <li><%= link_to "Home",    '#' %></li>
+	          <li><%= link_to "Help",    '#' %></li>
+	          <li><%= link_to "Sign in", '#' %></li>
+	        </ul>
+	      </nav>
+	    </div>
+	  </div>
+	</header>
+	<div class="container">
+	  <%= yield %>
+	</div>
+</body>
+</html>
 </body>
 </html>

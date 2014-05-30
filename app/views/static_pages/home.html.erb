@@ -2,15 +2,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Look At Me Now | <%= yield(:title) %></title>
+    <!-- <title>Look At Me Now | <%= yield(:title) %></title> -->
   </head>
-  <body>
-    <h1 style="text-align:center">I'm Actually Doing IT</h1>
-    <h6 style="text-align:center">...again</h6>
-    <p>
-      This is the home page for the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </p>
+  <body><!-- style="margin:50px 0px 0px 0px;"> -->
+    <div class="center logosize">
+      <%= link_to image_tag("Logo1.png", alt: "Radius Health"), 'http://rubyonrails.org/' %>
+    </div>
+    <div class="center hero-unit">
+      <h1>I'm Actually Doing IT</h1>
+      <h6>...again</h6>
+      <h2>
+        This is the home page for the
+        <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application.
+      <h2>
+      <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+    </div>
   </body>
 </html>
