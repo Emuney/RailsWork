@@ -37,6 +37,7 @@ class UsersController < ApplicationController
     #    render 'new'
     # end
     if @user.save
+      sign_in @user
       flash[:success] = "Welcome to Radius Health!"
       redirect_to @user
     else
