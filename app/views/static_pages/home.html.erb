@@ -5,18 +5,18 @@
     <!-- <title>Look At Me Now | <%= yield(:title) %></title> -->
   </head>
   <body><!-- style="margin:50px 0px 0px 0px;"> -->
-    <div class="center logosize">
-      <%= link_to image_tag("Logo1.png", alt: "Radius Health"), 'http://rubyonrails.org/' %>
-    </div>
+    
     <div class="center hero-unit">
       <h1>Welcome to Radius Health</h1>
-      <h6>...again</h6>
       <h2>
         This is the home page for the
-        <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-        sample application.
-      <h2>
-      <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+        <a href="http://railstutorial.org/">radiushealth.com</a>
+      </h2>
+      <h2>Currently under construction</h2>
+      <%= link_to "Sign Up Now!", signup_path, class: "btn btn-large btn-primary" %>
+    </div>
+    <div class="center">
+      <%= link_to image_tag("Logo1.png", alt: "Radius Health", style: "height: 300px; width: 300px;"), 'http://rubyonrails.org/' %>
     </div>
   </body>
 </html>
